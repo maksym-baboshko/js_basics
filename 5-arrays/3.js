@@ -1,4 +1,6 @@
 // Searching for an item
+// Array.indexOf - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+// Array.includes - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
 const roles = ['user', 'admin', 'manager', 'admin'];
 

@@ -1,4 +1,4 @@
-// Introduction to arrays
+// Introduction to arrays | https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 const role1 = 'admin';
 const role2 = 'user';

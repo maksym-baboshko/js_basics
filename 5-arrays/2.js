@@ -1,4 +1,8 @@
 // Array controls
+// Array.push - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+// Array.pop - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
+// Array.unshift - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
+// Array.shift - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
 
 const users = ['Max', 'Kate', 'Alice'];
 console.log(users); // ['Max', 'Kate', 'Alice']

@@ -1,4 +1,6 @@
-// From string to array and back
+// From String to Array and back
+// String.split - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+// Array.join - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 
 const roles = ['user', 'admin', 'manager', 'superuser'];
 const url = 'auth/user/login';

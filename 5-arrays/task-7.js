@@ -19,13 +19,17 @@ const addTask = taskName => {
 const deleteTaskByTaskName = taskName => {
   const taskIdx = tasks.indexOf(taskName);
 
-  if (taskIdx >= 0) {
-    return tasks.splice(taskIdx, 1).at(0);
-  }
+  if (taskIdx < 0) return;
+
+  return tasks.splice(taskIdx, 1).at(0);
 };
 
 const moveTaskToBeginning = taskName => {
-  tasks.unshift(deleteTaskByTaskName(taskName));
+  const task = deleteTaskByTaskName(taskName);
+
+  if (!task) return;
+
+  tasks.unshift(task);
 };
 
 addTask('Task 2');
