@@ -9,13 +9,17 @@
 */
 
 const logURLDetails = url => {
-  const [protocol, shortURL] = url.split('://');
-  const [domain, ...path] = shortURL.split('/');
-  const updatedPath = path.join('/');
+  const [prot, _, domain, ...p] = url.split('/');
+  const protocol = prot.split(':')[0];
+  const path = `/${p.join('/')}`;
 
-  console.log(protocol);
-  console.log(domain);
-  console.log(updatedPath);
+  if (protocol === 'http' || protocol === 'https') {
+    if (!domain.includes('.')) return;
+
+    console.log(`Protocol: ${protocol}`);
+    console.log(`Domain: ${domain}`);
+    console.log(`Path: ${path}`);
+  }
 };
 
 logURLDetails('https://developer.mozilla.org/en-US/docs/Web/JavaScript');
